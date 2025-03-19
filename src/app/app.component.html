@@ -1,1 +1,7 @@
-<h1 class="center">Practice Time!</h1>
+<h1 class="center"><app-header /></h1>
+<main>
+  <app-user-input (calculateInvestment)="onCalculateInvestmentInAppComp($event)"/>
+  <app-investment-results
+    [results]="[finalResults]"
+  />
+</main>
